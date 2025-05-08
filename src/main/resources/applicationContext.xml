@@ -4,6 +4,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
     
+    <!-- HelloWorld bean definition -->
     <bean id="helloWorld" class="com.example.app.HelloWorld">
         <property name="message" value="Hello World!"/>
     </bean>

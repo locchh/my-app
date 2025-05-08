@@ -1,5 +1,6 @@
 package com.example.app;
 
+// Bean class that represents a HelloWorld object
 public class HelloWorld {
     
     private String message;

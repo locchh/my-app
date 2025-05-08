@@ -12,7 +12,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App 
 {
     public static void main( String[] args )
-    {
+    {   
+        // The Spring container is represented by the ApplicationContext interface,
+        // which is implemented by the ClassPathXmlApplicationContext class. 
+        
         // Create a new Spring application context by loading the XML configuration file
         // This loads all bean definitions from applicationContext.xml in the classpath
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -25,5 +28,8 @@ public class App
         // Call toString() on the HelloWorld bean and print the result
         // This will display the message that was injected via Spring
         System.out.println( obj.toString() );
+
+        // Close the application context
+        //context.close();
     }
 }
