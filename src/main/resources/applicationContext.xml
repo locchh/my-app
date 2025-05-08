@@ -4,8 +4,13 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
     
-    <!-- HelloWorld bean definition -->
+    <!-- setter-injected HelloWorld bean definition -->
     <bean id="helloWorld" class="com.example.app.HelloWorld">
         <property name="message" value="Hello World!"/>
+    </bean>
+
+    <!-- constructor-injected HelloWorld bean definition -->
+    <bean id="helloWorldAnother" class="com.example.app.HelloWorld">
+        <constructor-arg value="Hello World Another!"/>
     </bean>
 </beans>
